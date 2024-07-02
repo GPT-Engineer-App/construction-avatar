@@ -7,6 +7,7 @@ import Layout from "./layouts/default"; // available: default, navbar, sidebar
 import Index from "./pages/Index.jsx";
 import ConstructionManagement from "./pages/ConstructionManagement.jsx";
 import ThreeDVisualization from "./pages/ThreeDVisualization.jsx";
+import WeLearn from "./pages/WeLearn.jsx";
 const queryClient = new QueryClient();
 
 export const navItems = [
@@ -18,6 +19,11 @@ export const navItems = [
   {
     title: "3D Visualization",
     to: "/3d-visualization",
+    icon: <Package2 className="h-4 w-4" />,
+  },
+  {
+    title: "We Learn",
+    to: "/we-learn",
     icon: <Package2 className="h-4 w-4" />,
   },
 ];
@@ -33,6 +39,7 @@ const App = () => {
               <Route index element={<Index />} />
               <Route path="/construction-management" element={<ConstructionManagement />} />
               <Route path="/3d-visualization" element={<ThreeDVisualization />} />
+              <Route path="/we-learn" element={<WeLearn />} />
             </Route>
           </Routes>
         </Router>
