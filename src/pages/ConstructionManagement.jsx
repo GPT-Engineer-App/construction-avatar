@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { Calendar, Gauge, Notifications } from "lucide-react";
+import { Calendar, Gauge, Bell } from "lucide-react";
 
 const ConstructionManagement = () => {
   return (
@@ -51,7 +51,7 @@ const ConstructionManagement = () => {
             <CardTitle>Notifications</CardTitle>
           </CardHeader>
           <CardContent>
-            <Notifications className="h-16 w-16 mx-auto" />
+            <Bell className="h-16 w-16 mx-auto" />
             <p className="text-center mt-4">Receive updates and alerts.</p>
           </CardContent>
         </Card>
