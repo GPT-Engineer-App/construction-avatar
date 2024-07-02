@@ -13,6 +13,12 @@ import { CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
+navItems.push({
+  title: "Construction Management",
+  to: "/construction-management",
+  icon: <Package2 className="h-4 w-4" />,
+});
+
 const Layout = () => {
   return (
     <div className="flex min-h-screen w-full flex-col">
