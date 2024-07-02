@@ -6,7 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/default"; // available: default, navbar, sidebar
 import Index from "./pages/Index.jsx";
 import ConstructionManagement from "./pages/ConstructionManagement.jsx";
-import { ThreeDVisualization } from "./pages/ThreeDVisualization.jsx";
+import ThreeDVisualization from "./pages/ThreeDVisualization.jsx";
 const queryClient = new QueryClient();
 
 export const navItems = [
