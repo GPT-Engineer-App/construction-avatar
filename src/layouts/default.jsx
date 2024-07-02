@@ -12,6 +12,7 @@ const Layout = () => {
         <nav className="flex space-x-4">
           <a href="/" className="text-primary">Home</a>
           <a href="/3d-visualization" className="text-primary">3D Visualization</a>
+          <a href="/we-learn" className="text-primary">We Learn</a>
         </nav>
       </header>
       <Outlet />
