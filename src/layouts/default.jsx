@@ -9,6 +9,10 @@ const Layout = () => {
           <Package2 className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold">Construction Project Management</span>
         </div>
+        <nav className="flex space-x-4">
+          <a href="/" className="text-primary">Home</a>
+          <a href="/3d-visualization" className="text-primary">3D Visualization</a>
+        </nav>
       </header>
       <Outlet />
     </main>
