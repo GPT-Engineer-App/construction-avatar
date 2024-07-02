@@ -13,6 +13,12 @@ import { CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
+navItems.push({
+  title: "3D Visualization",
+  to: "/3d-visualization",
+  icon: <Package2 className="h-4 w-4" />,
+});
+
 const Layout = () => {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">

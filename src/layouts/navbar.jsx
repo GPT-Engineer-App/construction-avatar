@@ -19,6 +19,12 @@ navItems.push({
   icon: <Package2 className="h-4 w-4" />,
 });
 
+navItems.push({
+  title: "3D Visualization",
+  to: "/3d-visualization",
+  icon: <Package2 className="h-4 w-4" />,
+});
+
 const Layout = () => {
   return (
     <div className="flex min-h-screen w-full flex-col">
