@@ -1,5 +1,12 @@
 import { Outlet } from "react-router-dom";
 import { Package2 } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 const Layout = () => {
   return (
@@ -11,8 +18,19 @@ const Layout = () => {
         </div>
         <nav className="flex space-x-4">
           <a href="/" className="text-primary">Home</a>
-          <a href="/3d-visualization" className="text-primary">3D Visualization</a>
-          <a href="/we-learn" className="text-primary">We Learn</a>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline">More</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <a href="/3d-visualization" className="text-primary">3D Visualization</a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a href="/we-learn" className="text-primary">We Learn</a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
       </header>
       <Outlet />
