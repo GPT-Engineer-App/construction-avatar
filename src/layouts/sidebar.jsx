@@ -14,8 +14,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
 navItems.push({
-  title: "3D Visualization",
-  to: "/3d-visualization",
+  title: "Trusted Suppliers",
+  to: "/trusted-suppliers",
   icon: <Package2 className="h-4 w-4" />,
 });
 

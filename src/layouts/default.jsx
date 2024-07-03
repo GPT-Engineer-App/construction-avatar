@@ -29,6 +29,9 @@ const Layout = () => {
               <DropdownMenuItem asChild>
                 <a href="/we-learn" className="text-primary">We Learn</a>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a href="/trusted-suppliers" className="text-primary">Trusted Suppliers</a>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

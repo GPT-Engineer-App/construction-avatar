@@ -25,6 +25,12 @@ navItems.push({
   icon: <Package2 className="h-4 w-4" />,
 });
 
+navItems.push({
+  title: "Trusted Suppliers",
+  to: "/trusted-suppliers",
+  icon: <Package2 className="h-4 w-4" />,
+});
+
 const Layout = () => {
   return (
     <div className="flex min-h-screen w-full flex-col">

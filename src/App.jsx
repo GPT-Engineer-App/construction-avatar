@@ -8,6 +8,7 @@ import Index from "./pages/Index.jsx";
 import ConstructionManagement from "./pages/ConstructionManagement.jsx";
 import ThreeDVisualization from "./pages/ThreeDVisualization.jsx";
 import WeLearn from "./pages/WeLearn.jsx";
+import TrustedSuppliers from "./pages/TrustedSuppliers.jsx";
 const queryClient = new QueryClient();
 
 export const navItems = [
@@ -26,6 +27,11 @@ export const navItems = [
     to: "/we-learn",
     icon: <Package2 className="h-4 w-4" />,
   },
+  {
+    title: "Trusted Suppliers",
+    to: "/trusted-suppliers",
+    icon: <Package2 className="h-4 w-4" />,
+  },
 ];
 
 const App = () => {
@@ -40,6 +46,7 @@ const App = () => {
               <Route path="/construction-management" element={<ConstructionManagement />} />
               <Route path="/3d-visualization" element={<ThreeDVisualization />} />
               <Route path="/we-learn" element={<WeLearn />} />
+              <Route path="/trusted-suppliers" element={<TrustedSuppliers />} />
             </Route>
           </Routes>
         </Router>
