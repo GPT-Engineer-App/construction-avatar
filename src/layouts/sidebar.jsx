@@ -19,6 +19,12 @@ navItems.push({
   icon: <Package2 className="h-4 w-4" />,
 });
 
+navItems.push({
+  title: "Historical Data Analysis",
+  to: "/historical-data-analysis",
+  icon: <Package2 className="h-4 w-4" />,
+});
+
 const Layout = () => {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
