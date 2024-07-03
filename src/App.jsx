@@ -9,6 +9,7 @@ import ConstructionManagement from "./pages/ConstructionManagement.jsx";
 import ThreeDVisualization from "./pages/ThreeDVisualization.jsx";
 import WeLearn from "./pages/WeLearn.jsx";
 import TrustedSuppliers from "./pages/TrustedSuppliers.jsx";
+import HistoricalDataAnalysis from "./pages/HistoricalDataAnalysis.jsx";
 const queryClient = new QueryClient();
 
 export const navItems = [
@@ -47,6 +48,7 @@ const App = () => {
               <Route path="/3d-visualization" element={<ThreeDVisualization />} />
               <Route path="/we-learn" element={<WeLearn />} />
               <Route path="/trusted-suppliers" element={<TrustedSuppliers />} />
+              <Route path="/historical-data-analysis" element={<HistoricalDataAnalysis />} />
             </Route>
           </Routes>
         </Router>
