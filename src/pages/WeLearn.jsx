@@ -8,60 +8,60 @@ const WeLearn = () => {
   return (
     <div className="space-y-8 p-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold">We Learn</h1>
-        <p className="text-xl text-muted-foreground">Advanced Techniques for Project Planning and Execution</p>
+        <h1 className="text-4xl font-bold">Nós Aprendemos</h1>
+        <p className="text-xl text-muted-foreground">Técnicas Avançadas para Planejamento e Execução de Projetos</p>
       </header>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-bold">Introduction</h2>
+        <h2 className="text-2xl font-bold">Introdução</h2>
         <p className="text-lg">
-          Welcome to We Learn, your go-to resource for mastering advanced techniques in project planning and execution. Our goal is to provide you with the knowledge and tools you need to take your project management skills to the next level.
+          Bem-vindo ao Nós Aprendemos, seu recurso para dominar técnicas avançadas de planejamento e execução de projetos. Nosso objetivo é fornecer a você o conhecimento e as ferramentas necessárias para levar suas habilidades de gerenciamento de projetos ao próximo nível.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-bold">Key Techniques</h2>
+        <h2 className="text-2xl font-bold">Técnicas Principais</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card>
             <CardHeader>
-              <CardTitle>Agile Methodology</CardTitle>
+              <CardTitle>Metodologia Ágil</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Learn how to implement Agile practices to improve flexibility and responsiveness in your projects.</p>
+              <p>Aprenda a implementar práticas Ágeis para melhorar a flexibilidade e a capacidade de resposta em seus projetos.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Lean Project Management</CardTitle>
+              <CardTitle>Gerenciamento de Projetos Lean</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Discover Lean techniques to minimize waste and maximize value in your project workflows.</p>
+              <p>Descubra técnicas Lean para minimizar desperdícios e maximizar o valor em seus fluxos de trabalho de projetos.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Critical Path Method</CardTitle>
+              <CardTitle>Método do Caminho Crítico</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Understand the Critical Path Method to identify the most important tasks and ensure timely project completion.</p>
+              <p>Entenda o Método do Caminho Crítico para identificar as tarefas mais importantes e garantir a conclusão pontual do projeto.</p>
             </CardContent>
           </Card>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-bold">Benefits</h2>
+        <h2 className="text-2xl font-bold">Benefícios</h2>
         <ul className="list-disc list-inside space-y-2">
-          <li>Enhanced project efficiency</li>
-          <li>Improved team collaboration</li>
-          <li>Better risk management</li>
-          <li>Increased project success rates</li>
+          <li>Maior eficiência do projeto</li>
+          <li>Melhoria na colaboração da equipe</li>
+          <li>Melhor gerenciamento de riscos</li>
+          <li>Aumento nas taxas de sucesso do projeto</li>
         </ul>
       </section>
 
       <section className="text-center">
         <Button onClick={() => navigate("/contact")} className="mt-4">
-          Contact Us to Learn More
+          Entre em Contato para Saber Mais
         </Button>
       </section>
     </div>

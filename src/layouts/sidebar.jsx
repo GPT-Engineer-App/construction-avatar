@@ -14,13 +14,13 @@ import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
 navItems.push({
-  title: "Trusted Suppliers",
+  title: "Fornecedores Confiáveis",
   to: "/trusted-suppliers",
   icon: <Package2 className="h-4 w-4" />,
 });
 
 navItems.push({
-  title: "Historical Data Analysis",
+  title: "Análise de Dados Históricos",
   to: "/historical-data-analysis",
   icon: <Package2 className="h-4 w-4" />,
 });
@@ -102,12 +102,12 @@ const UserDropdown = () => (
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
-      <DropdownMenuLabel>My Account</DropdownMenuLabel>
+      <DropdownMenuLabel>Minha Conta</DropdownMenuLabel>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Settings</DropdownMenuItem>
-      <DropdownMenuItem>Support</DropdownMenuItem>
+      <DropdownMenuItem>Configurações</DropdownMenuItem>
+      <DropdownMenuItem>Suporte</DropdownMenuItem>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Logout</DropdownMenuItem>
+      <DropdownMenuItem>Sair</DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
 );

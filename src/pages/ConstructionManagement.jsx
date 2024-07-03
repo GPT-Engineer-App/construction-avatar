@@ -7,8 +7,8 @@ const ConstructionManagement = () => {
   return (
     <div className="space-y-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold">Construction Project Management</h1>
-        <p className="text-xl text-muted-foreground">Detailed Scheduling and Real-Time Monitoring</p>
+        <h1 className="text-4xl font-bold">Gerenciamento de Projetos de Construção</h1>
+        <p className="text-xl text-muted-foreground">Agendamento Detalhado e Monitoramento em Tempo Real</p>
       </header>
 
       <section className="flex justify-center">
@@ -21,7 +21,7 @@ const ConstructionManagement = () => {
               </Avatar>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Interacting with Project Management Software</p>
+              <p>Interagindo com o Software de Gerenciamento de Projetos</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
@@ -30,44 +30,44 @@ const ConstructionManagement = () => {
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card>
           <CardHeader>
-            <CardTitle>Scheduling</CardTitle>
+            <CardTitle>Agendamento</CardTitle>
           </CardHeader>
           <CardContent>
             <Calendar className="h-16 w-16 mx-auto" />
-            <p className="text-center mt-4">Plan and schedule tasks efficiently.</p>
+            <p className="text-center mt-4">Planeje e agende tarefas de forma eficiente.</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Real-Time Monitoring</CardTitle>
+            <CardTitle>Monitoramento em Tempo Real</CardTitle>
           </CardHeader>
           <CardContent>
             <Gauge className="h-16 w-16 mx-auto" />
-            <p className="text-center mt-4">Monitor progress in real-time.</p>
+            <p className="text-center mt-4">Monitore o progresso em tempo real.</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Notifications</CardTitle>
+            <CardTitle>Notificações</CardTitle>
           </CardHeader>
           <CardContent>
             <Bell className="h-16 w-16 mx-auto" />
-            <p className="text-center mt-4">Receive updates and alerts.</p>
+            <p className="text-center mt-4">Receba atualizações e alertas.</p>
           </CardContent>
         </Card>
       </section>
 
       <section className="text-center">
-        <h2 className="text-2xl font-bold">Benefits</h2>
+        <h2 className="text-2xl font-bold">Benefícios</h2>
         <ul className="list-disc list-inside mt-4 space-y-2">
-          <li>Reduce errors</li>
-          <li>Minimize delays</li>
-          <li>Improve efficiency</li>
+          <li>Reduzir erros</li>
+          <li>Minimizar atrasos</li>
+          <li>Melhorar a eficiência</li>
         </ul>
       </section>
 
       <footer className="text-center mt-8">
-        <p>For more details about the software, contact us at <a href="mailto:info@constructionmanagement.com" className="text-primary">info@constructionmanagement.com</a></p>
+        <p>Para mais detalhes sobre o software, entre em contato conosco em <a href="mailto:info@gerenciamentodeconstrucao.com" className="text-primary">info@gerenciamentodeconstrucao.com</a></p>
       </footer>
     </div>
   );
