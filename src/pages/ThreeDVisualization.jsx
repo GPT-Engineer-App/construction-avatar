@@ -44,11 +44,11 @@ const ThreeDVisualization = () => {
 
   return (
     <div className="text-center space-y-8">
-      <h1 className="text-4xl font-bold">3D Visualization</h1>
-      <p className="text-xl text-muted-foreground">Visualize your project in 3D and identify potential scheduling issues.</p>
+      <h1 className="text-4xl font-bold">Visualização 3D</h1>
+      <p className="text-xl text-muted-foreground">Visualize seu projeto em 3D e identifique possíveis problemas de cronograma.</p>
       <div ref={mountRef} className="w-full h-96"></div>
       <Button onClick={() => navigate("/")} className="mt-4">
-        Back to Home
+        Voltar para Início
       </Button>
     </div>
   );

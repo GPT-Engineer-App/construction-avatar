@@ -68,14 +68,14 @@ const HistoricalDataAnalysis = () => {
   return (
     <div className="space-y-8 p-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold">Historical Data Analysis</h1>
-        <p className="text-xl text-muted-foreground">Analyze past project data and predict potential schedule deviations.</p>
+        <h1 className="text-4xl font-bold">Análise de Dados Históricos</h1>
+        <p className="text-xl text-muted-foreground">Analise dados de projetos passados e preveja possíveis desvios de cronograma.</p>
       </header>
 
       <section className="space-y-4">
         <Card>
           <CardHeader>
-            <CardTitle>Upload Historical Data</CardTitle>
+            <CardTitle>Carregar Dados Históricos</CardTitle>
           </CardHeader>
           <CardContent>
             <Input type="file" accept=".csv, .xlsx" onChange={handleFileUpload} />
@@ -86,13 +86,13 @@ const HistoricalDataAnalysis = () => {
       <section className="space-y-4">
         <Card>
           <CardHeader>
-            <CardTitle>Data Visualization</CardTitle>
+            <CardTitle>Visualização de Dados</CardTitle>
           </CardHeader>
           <CardContent>
             {chartData.labels ? (
               <Line data={chartData} />
             ) : (
-              <p>No data to display</p>
+              <p>Nenhum dado para exibir</p>
             )}
           </CardContent>
         </Card>
@@ -101,16 +101,16 @@ const HistoricalDataAnalysis = () => {
       <section className="space-y-4">
         <Card>
           <CardHeader>
-            <CardTitle>Machine Learning Predictions</CardTitle>
+            <CardTitle>Previsões de Aprendizado de Máquina</CardTitle>
           </CardHeader>
           <CardContent>
             {isLoading ? (
-              <p>Loading predictions...</p>
+              <p>Carregando previsões...</p>
             ) : error ? (
-              <p>Error loading predictions: {error.message}</p>
+              <p>Erro ao carregar previsões: {error.message}</p>
             ) : predictionData ? (
               <div>
-                <h2 className="text-2xl font-bold">Predicted Deviations</h2>
+                <h2 className="text-2xl font-bold">Desvios Previstos</h2>
                 <ul className="list-disc list-inside mt-4 space-y-2">
                   {predictionData.map((prediction, index) => (
                     <li key={index}>{prediction}</li>
@@ -118,7 +118,7 @@ const HistoricalDataAnalysis = () => {
                 </ul>
               </div>
             ) : (
-              <p>No predictions available</p>
+              <p>Nenhuma previsão disponível</p>
             )}
           </CardContent>
         </Card>

@@ -27,8 +27,8 @@ const TrustedSuppliers = () => {
   return (
     <div className="space-y-8 p-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold">Trusted Suppliers</h1>
-        <p className="text-xl text-muted-foreground">Our trusted partner suppliers of subcontractors</p>
+        <h1 className="text-4xl font-bold">Fornecedores Confiáveis</h1>
+        <p className="text-xl text-muted-foreground">Nossos fornecedores parceiros confiáveis de subcontratados</p>
       </header>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -38,9 +38,9 @@ const TrustedSuppliers = () => {
               <CardTitle>{supplier.name}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p><strong>Materials:</strong> {supplier.materials}</p>
-              <p><strong>Labor:</strong> {supplier.labor}</p>
-              <Badge variant="outline" className="mt-2">Trusted</Badge>
+              <p><strong>Materiais:</strong> {supplier.materials}</p>
+              <p><strong>Mão de obra:</strong> {supplier.labor}</p>
+              <Badge variant="outline" className="mt-2">Confiável</Badge>
             </CardContent>
           </Card>
         ))}
@@ -48,7 +48,7 @@ const TrustedSuppliers = () => {
 
       <section className="text-center">
         <Button onClick={() => navigate("/")} className="mt-4">
-          Back to Home
+          Voltar para Início
         </Button>
       </section>
     </div>
